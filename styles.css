@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+:root{
+
+    --height:100vh;
+    --width:50vw
+    
+
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./img/christoffer-engstrom-wc9avd2RaN0-unsplash.jpg);
+    background-size: cover;
+    height: var(--height);
+    width: var(--width);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 20vh;
+    width: 20vh;
+    position: relative;
+    top: 10vh;
+    
+}
+
+
+.credit{
+    color: antiquewhite;
+    padding-bottom: 1vh;
+}
+
+
+
+
+.right{
+    background-color: rgb(240, 235, 228);
+    display: flex;
+    flex-flow: column wrap;
+    border: 5px solid rgba(239, 229, 216, 0.863);
+    height: var(--height);
+    width: var(--width);
+    
+}
+
+
+.top-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-family:'Sofia Sans', sans-serif;
+}
+
+.form-section{
+        display: flex;
+        flex-flow: row wrap;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Sofia Sans', sans-serif;
+}
+
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+input{
+    width: 20vw;
+    background-color: antiquewhite;
+    border: black 2px solid;
+}
+
+
+input:active{
+    background-color: white;
+}
+
+input:valid{
+    box-shadow: 2px 2px 2px 1px rgba(107, 109, 204, 0.4) ;
+}
+
+input:invalid{
+    border: solid 2px black;
+    box-shadow: 2px 2px 2px 1px rgba(204, 107, 107, 0.4)
+}
+
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+button{
+    padding: 30px 60px 30px 60px;
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 30px ;
+    background-color: rgba(149, 213, 211, 0.62) ;
+
+}
+
+button:hover{
+    background-color: black;
+    border: rgba(149, 213, 211, 1) solid 5px;
+    color: rgba(149, 213, 211, 1);
+  
+}
+
+
+
+.confirm-section{
+    font-family: 'Sofia Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(149, 213, 211, 1);
+}
+
+a:hover{
+    color: red;
+}
+
